@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+%poppins-400{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%poppins-500{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%poppins-600{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+  display: block;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1336px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  @extend %poppins-600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000;
+}
+
+.header{
+  padding-top: 37px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 51px;
+  }
+  &__menu-list{
+    display: flex;
+  }
+  &__menu-list__item + &__menu-list__item{
+    margin-left: 30px;
+  }
+  &__menu-list__link{
+    @extend %poppins-500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #263238;
+    transition: all .3s;
+    &:hover{
+      color: #8F95A5;
+    }
+  }
+  &__button{
+    @extend %poppins-400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    padding: 12px 37px;
+    border: 2px solid #263238;
+    border-radius: 5px;
+    transition: all .5s;
+    &:hover{
+      border-color: #000;
+      color: #fff;
+      background-color: #263238;
+    }
+  }
+}
+
+.languages{
+  padding-bottom: 103px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 536px;
+    padding-top: 50px;
+  }
+  &__title{
+    @extend %poppins-600;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  &__text{
+    @extend %poppins-400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #8F95A5;
+    margin-bottom: 92px;
+  }
+  &__button{
+    @extend %poppins-400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #fff;
+    padding: 22px 79px;
+    background-color: #263238;
+    border-radius: 15px;
+    border: 1px solid #263238;
+    transition: all .3s;
+    &:hover{
+      background-color: #2b3c44;
+    }
+  }
+}
+
+.skills{
+  padding-top: 100px;
+  margin-bottom: 255px;
+  &__title{
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  &__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 2fr 1fr; 
+    gap: 20px 18px; 
+    grid-template-areas: 
+    "skills__speaking skills__writing skills__reading"
+    "skills__speaking skills__listening skills__listening";
+  }
+  &__card{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 10px 9px 6px -2px rgba(191,191,191,0.63);
+      -webkit-box-shadow: 10px 9px 6px -2px rgba(191,191,191,0.63);
+      -moz-box-shadow: 10px 9px 6px -2px rgba(191,191,191,0.63);cursor: pointer;
+    }
+  }
+  &__card-title{
+    @extend %poppins-600;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: left;
+    color: #000;
+  }
+  &__card-box{
+    padding: 4px 38px 0 44px;
+  }
+  &__text{
+    @extend %poppins-400;
+    font-size: 16px;
+    line-height: 24px; 
+    color: #8F95A5;
+    margin-bottom: 30px;
+  }
+  &__text-1{
+    margin-bottom: 37px;
+  }
+  &__text-2{
+    margin-bottom: 36px;
+  }
+  &__button{
+    @extend %poppins-500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    padding: 17px 63px;
+    background: #263238;
+    border-radius: 5px;
+    display: block;
+    max-width: 230px;
+    &:hover{
+      background-color: #2b3c44;
+    }
+  }
+  &__speaking{
+    grid-area: skills__speaking;
+    height: 896px !important;
+  }
+  &__speaking-title{
+    margin-bottom: 5px;
+  }
+  &__writing{
+    grid-area: skills__writing; 
+    padding: 251px 42px 44px 42px;
+    position: relative;
+    height: 560px !important;
+  }
+  &__writing-img{
+    position: absolute;
+    top: 0;
+    right: 38px;
+  }
+  &__reading { 
+    grid-area: skills__reading;
+    height: 560px !important; 
+  }
+  &__reading-box{
+    padding: 0 43px 43px;
+  }
+  &__reading-img{
+    text-align: left;
+  }
+  &__listening { 
+    grid-area: skills__listening; 
+    display: flex;
+    height: 315px !important;
+    padding: 27px 25px 68px 44px;
+    margin-top: -23px;
+  }
+  &__listening-img{
+    height: 255px;
+    width: 382px;
+  }
+  &__listening-box{
+    margin-right: 70px;
+  }
+}
+
+.about{
+  padding-bottom: 188px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 644px;
+    padding-top: 30px;
+  }
+  &__title{
+    margin-bottom: 23px;
+  }
+  &__text{
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+    margin-bottom: 68px;
+  }
+  &__numbers{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__numbers-item{
+    text-align: center;
+  }
+  &__number{
+    @extend %poppins-600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #2A3246;
+  }
+  &__number-text{
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+  }
+}
+
+.pricing{
+  padding-bottom: 257px;
+  &__title{
+    text-align: center;
+    margin-bottom: 57px;
+  }
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+  }
+  &__card{
+    padding-top: 350px;
+    position: relative;
+  }
+  &__card-1{
+    &::after{
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 30px;
+      width: 311px;
+      height: 311px;
+      background-image: url('../images/pricing/self-study.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__card-2{
+    &::after{
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      width: 391px;
+      height: 283px;
+      background-image: url('../images/pricing/classes.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__card-3{
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -5px;
+      width: 340px;
+      height: 340px;
+      background-image: url('../images/pricing/personal.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  &__card-title{
+    @extend %poppins-600;
+    font-size: 30px;
+    line-height: 48px;
+    color: #263238;
+  }
+  &__text{
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+    min-height: 90px;
+    margin-bottom: 29px;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    background: #EEEEEE;
+    border-radius: 5px;
+    width: 240px;
+    padding-left: 20px;
+  }
+  &__number{
+    @extend %poppins-400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #263238;
+    margin-right: 8px;
+  }
+  &__description{
+    @extend %poppins-400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #546269;
+  }
+}
+
+.contact{
+  padding-bottom: 113px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    margin-bottom: 37px;
+  }
+  &__text{
+    @extend %poppins-400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+    margin-bottom: 52px;
+  }
+  &__bg{
+    margin-right: 111px;
+  }
+  &__content{
+    padding-top: 33px;
+  }
+  &__input{
+    padding: 28px;
+    width: 447px;
+    border: 1px solid #8F95A5;
+    border-radius: 10px;
+    @extend %poppins-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-right: 6px;
+    &::placeholder{
+      @extend %poppins-400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #8F95A5;
+    }
+  }
+  &__button{
+    @extend %poppins-500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    border: none;
+    padding: 25px 80px;
+    background: #263238;
+    border-radius: 10px;
+  }
+}
+
+.footer{
+  padding-bottom: 31px;
+  &__inner{
+    border-top: 1px solid #C4C4C4;
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__links{
+    color: #8F95A5;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &__link{
+    @extend %poppins-400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #8F95A5;
+    transition: all .3s;
+    &:hover{
+      color: #263238;
+    }
+  }
+}
