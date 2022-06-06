@@ -68,6 +68,9 @@ body{
 .header__menu-mobile{
   display: none;
 }
+.nav-links{
+  display: none;
+}
 
 .title{
   @extend %poppins-600;
@@ -748,8 +751,9 @@ body{
 }
 
 @media (max-width: 769px){
-  .nav-links{
+  .nav-links--active{
     transition: all .5s;
+    display: block;
   }
   .header{
     &__menu-click{
