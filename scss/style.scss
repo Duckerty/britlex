@@ -920,4 +920,159 @@ body{
       padding: 18px 60px;
     }
   }
+  .title{
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .skills{
+    margin-bottom: 52px;
+    &__title{
+      margin-bottom: 37px;
+    }
+    &__speaking-img{
+      width: 214px;
+      height: 214px;
+    }
+    &__writing-img{
+      width: 200px;
+      height: 200px;
+      right: 14px;
+    }
+    &__reading-img{
+      width: 216px;
+      height: 144px;
+      margin-top: 10px;
+      margin-bottom: 43px;
+    }
+    &__listening-img{
+      width: 202px;
+      height: 134px;
+      margin-top: 26px;
+    }
+    &__writing{
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+    &__reading-box{
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+    &__listening-box{
+      margin-right: 0;
+    }
+    &__card-title{
+      font-size: 20px;
+      line-height: 40px;
+    }
+    &__text{
+      font-size: 13px;
+      line-height: 20px;
+    }
+    &__text-2{
+      margin-bottom: 65px;
+    }
+    &__card-box{
+      padding: 2px 13px 0 13px;
+    }
+    &__button{
+      font-size: 16px;
+      line-height: 24px;
+      padding: 14px 40px;
+      max-width: 178px;
+    }
+  }
+  .about{
+    padding-bottom: 87px;
+    &__content{
+      margin-right: 77px;
+    }
+    &__bg{
+      padding-top: 35px;
+    }
+    &__img{
+      width: 295px;
+      height: 295px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &__number{
+      font-size: 24px;
+    }
+    &__number-text{
+      font-size: 15px;
+    }
+  }
+  .pricing{
+    padding-bottom: 87px;
+    &__title{
+      margin-bottom: 21px;
+    }
+    &__inner{
+      grid-column-gap: 55px;
+    }
+    &__card{
+      padding-top: 220px;
+    }
+    &__card-1::after{
+      width: 195px;
+      height: 195px;
+    }
+    &__card-2::after{
+      width: 219px;
+      height: 168px;
+    }
+    &__card-3::after{
+      width: 210px;
+      height: 210px;
+    }
+    &__card-title{
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 0;
+    }
+    &__box{
+      width: 205px;
+      padding: 6px 23px 6px 12px;
+    }
+    &__number{
+      font-size: 22px;
+      line-height: 33px;
+    }
+    &__description{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .contact{
+    padding-bottom: 90px;
+    &__bg{
+      margin-right: 38px;
+      padding-top: 30px;
+    }
+    &__img{
+      width: 233px;
+      height: 211px;
+    }
+    &__title{
+      margin-bottom: -10px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+    &__input{
+      width: 294px;
+      padding: 16px 0 16px 23px;
+    }
+    &__button{
+      padding: 17px 37px;
+    }
+  }
 }
