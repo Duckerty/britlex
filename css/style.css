@@ -930,7 +930,7 @@ body {
     position: absolute;
     top: -6px;
     width: 30px;
-    height: 2px;
+    height: 3px;
     border-radius: 1px;
     background-color: #39615E;
   }
@@ -1247,7 +1247,7 @@ body {
     right: 20px;
   }
   .header__menu-drop--btn span::before {
-    height: 3px;
+    height: 4px;
     border-radius: 2px;
   }
   .header__menu-drop--btn span::after {
